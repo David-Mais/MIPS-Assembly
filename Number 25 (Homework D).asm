@@ -1,4 +1,9 @@
 #(4x / 3) * y
+#This code prompts the user for input of two numbers X and Y and calculates (4X/3)*Y
+#It retrieves the input using syscall 6 moves values to floating-point registers loads 
+#constant values and performs calculations using multiplication and division The final 
+#result is stored in a floating-point register and printed to the console using syscall 2
+#The program ends with syscall 10
 .data
 	promptx: .asciiz "Please enter number for X: "
 	prompty: .asciiz "Please enter number for Y: "

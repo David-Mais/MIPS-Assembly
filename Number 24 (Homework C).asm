@@ -1,4 +1,11 @@
 #x^3 + 2x^2 + 3x + 4
+#This code is a MIPS assembly program that computes the value of the polynomial 
+#expression x^3 + 2x^2 + 3x + 4 given a user input value for x The program prompts 
+#the user to enter a value for x reads the input from the console and stores it in a 
+#register It then performs the necessary calculations on the value of x to compute the 
+#result of the polynomial expression Finally, the program displays the result to the user
+#This program provides an example of how basic arithmetic and input/output operations can be 
+#performed in MIPS assembly
 .data
 	prompt:  .asciiz "Please enter number x: "
 	message: .asciiz "Your result is: "

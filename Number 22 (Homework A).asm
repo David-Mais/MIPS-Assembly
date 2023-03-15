@@ -1,9 +1,14 @@
 # 5x + 3y + z
+# we have to calculate that is the result of this program
+# I am doing this by receiving float numbers from user using console and than
+#doing the following operations
 .data
 	promptx: .asciiz "please input a number x: "
 	prompty: .asciiz "please input a number y: "
 	promptz: .asciiz "please input a number z: "
 	result:  .asciiz "result of your numbers is: "
+	#since we don't have any zero or immediate in floats and coprocessor 1 we have to
+	#implement it on our own
 	zero:    .float 0.0
 	five:    .float 5.0
 	three:   .float 3.0
@@ -35,7 +40,7 @@
 	#handling z
 	
 	li $v0, 4
-	la $a0, prompty
+	la $a0, promptz
 	syscall
 	
 	#reading z
@@ -43,8 +48,6 @@
 	syscall
 	
 	mov.s $f3, $f0		#f2 = z
-	
-	
 	
 	
 	

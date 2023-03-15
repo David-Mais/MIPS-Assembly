@@ -1,4 +1,10 @@
 # ((5x + 3y + z)/2)*3
+# This MIPS assembly language program prompts the user to input three floating-point numbers x y
+# and z calculates the expression ((5x + 3y + z)/2)*3 and then prints the result The program 
+# achieves this by using system calls to prompt the user for input read the input and print 
+# the result The program also loads the constants 0.0 2.0 3.0 and 5.0 into floating-point 
+# registers performs arithmetic operations such as multiplication and addition and uses 
+# immediate values to perform division and multiplication operations
 .data
 	promptx: .asciiz "please input a number x: "
 	prompty: .asciiz "please input a number y: "
@@ -36,7 +42,7 @@
 	#handling z
 	
 	li $v0, 4
-	la $a0, prompty
+	la $a0, promptz
 	syscall
 	
 	#reading z
